@@ -1,0 +1,114 @@
+:is(input, select) {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 400;
+  color: var(--placeholder-text);
+}
+
+:is(input, select):focus-visible {
+  outline: 2px solid var(--light-green);
+}
+
+body {
+  margin: 1em 6em;
+  background: var(--light-green-mine);
+}
+
+.sellhere {
+  text-align: center;
+  font-size: 4rem;
+  margin-block: 0.5em;
+  color: var(--dark-green);
+}
+
+.yourInfo {
+  background: var(--pale-white);
+  padding: 2em;
+  border-radius: 16px;
+  margin-block-end: 4rem;
+}
+
+.yourInfo_heading {
+  font-size: 2.25rem;
+  padding-block-end: 0.5em;
+}
+
+.formforit {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.5em 1em;
+}
+
+.formforit>label {
+  font-size: 1.25rem;
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.category_container {
+  margin-block-end: 2em;
+}
+
+.category_heading {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: block;
+  margin-block-end: 0.5em;
+}
+
+.category-choice {
+  background-color: var(--pale-white);
+}
+
+.table-container {
+  display: grid;
+  grid-template-columns: 1fr minmax(3rem, 1fr) 1fr 1fr 1fr;
+  gap: 0.75rem;
+  margin-block-end: 3em;
+}
+
+.table-container>label {
+  margin-block-end: 0.5em;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.table-container :is(input, select) {
+  background-color: var(--pale-white);
+}
+
+.table-crop-price {
+  width: 100%;
+}
+
+.table-crop-price-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-columns: auto 1fr;
+}
+
+.table-crop-quantity-wrapper
+{
+  display: grid;
+  grid-template-columns: 1fr 10ch;
+  column-gap: 0.5em;
+}
+
+
+
+
+.submit-button {
+  padding: 0.8em 1.69em;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.submit-button:hover {
+  background-color: var(--light-green);
+}
+
+/*# sourceMappingURL=personal_info.css.map */

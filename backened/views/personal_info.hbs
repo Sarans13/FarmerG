@@ -1,0 +1,398 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer Selling Page</title>
+    <link rel="icon" type="image/svg" href="/assets/FarmFreshLogo.svg" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/personal_info.css" />
+    <script src="/js/personal_info.js" type="module" defer></script>
+  </head>
+
+  <body>
+    <h1 class="sellhere">Sell Here</h1>
+    <div class="yourInfo">
+      <h2 class="yourInfo_heading">Personal Information</h2>
+      <div class="formforit">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name"
+          required
+          class="box"
+        />
+        <label id="phone-label" for="phoneno">Phone Number</label>
+        <input
+          type="tel"
+          id="phone-number"
+          inputmode="numeric"
+          pattern="[0-9]{0,10}"
+          placeholder="Enter your phone number"
+          required
+        />
+        <label for="state">State</label>
+        <select name="state" id="state" class="box" data-js="state-list">
+          <option value="none" selected disabled hidden>
+            Select State
+          </option>
+        </select>
+        <label for="dist">District</label>
+        <select name="dist" id="dist" class="box" data-js="district-list">
+          <option value="none" selected disabled hidden>
+            Select District
+          </option>
+        </select>
+        <label for="block">Block</label>
+        <select name="block" id="block" class="box">
+          <option value="none" selected disabled hidden>
+            Select Block
+          </option>
+          <option value="javascript">Will be added later!</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="category_container">
+      <label class="category_heading">Category</label>
+      <select
+        name="category-choice"
+        id="category-choice"
+        class="category-choice"
+      >
+        <option value="none" selected disabled hidden>Select Category</option>
+        <option value="item2">fruit</option>
+        <option value="item3">vegetable</option>
+        <option value="item4">fibercrop</option>
+        <option value="item5">oilcrop</option>
+      </select>
+    </div>
+    <div class="table-container">
+      <label class="table_heading">Crops</label>
+      <label class="table_heading">Price</label>
+      <label class="table_heading">Quantity</label>
+      <label class="table_heading">Harvest Date</label>
+      <label class="table_heading">Sowing Date</label>
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+    </div>
+
+    <div class="category_container">
+      <label class="category_heading">Category</label>
+      <select
+        name="category-choice"
+        id="category-choice"
+        class="category-choice"
+      >
+        <option value="none" selected disabled hidden>Select Category</option>
+        <option value="item2">Rabi</option>
+        <option value="item3">Kharif</option>
+        <option value="item4">Zaid</option>
+      </select>
+    </div>
+    <div class="table-container">
+      <label class="table_heading">Crops</label>
+      <label class="table_heading">Price</label>
+      <label class="table_heading">Quantity</label>
+      <label class="table_heading">Harvest Date</label>
+      <label class="table_heading">Sowing Date</label>
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+
+      <select name="table-crop-choice" id="table-crop-choice">
+        <option value="item1">Potato</option>
+        <option value="item2">Tomato</option>
+        <option value="item3">Pumpkin</option>
+        <option value="item4">Onion</option>
+      </select>
+      <div class="table-crop-price-wrapper">
+        <picture>
+          <source srcset="https://img.icons8.com/material-outlined/24/ffffff/rupee.png" media="(prefers-color-scheme:dark)">
+          <img
+            src="https://img.icons8.com/material-outlined/24/000000/rupee.png"
+            alt=""
+          />
+        </picture>
+        <input
+          type="number"
+          name="table-crop-price"
+          id="table-crop-price"
+          class="table-crop-price"
+		  min="0"
+        />
+      </div>
+
+      <div class="table-crop-quantity-wrapper">
+		<input
+		  type="number"
+		  name="table-crop-quantity"
+		  id="table-crop-quantity"
+		  class="table-crop-quantity"
+		  min="1"
+		/>
+		<select name="amount_dropdown" id="amount_dropdown">
+			<option value="kg">kg</option>
+			<option value="tonne">tonne</option>
+			<option value="quintal">quintal</option>
+		</select>
+	  </div>
+
+      <input
+        type="date"
+        name="table-crop-harvest-date"
+        id="table-crop-harvest-date"
+        class="table-crop-harvest-date"
+      />
+      <input
+        type="date"
+        name="table-crop-sowing-date"
+        id="table-crop-sowing-date"
+        class="table-crop-sowing-date"
+      />
+    </div>
+    <button class="submit-button">Submit</button>
+
+  </body>
+</html>

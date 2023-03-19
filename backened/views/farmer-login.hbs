@@ -1,0 +1,66 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Farmer Login Page</title>
+    <link rel="icon" type="image/svg" href="assets/FarmFreshLogo.svg" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/loginAadhaarVerify.js" type="module" defer></script>
+    <script src="/js/extraUtils.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="tabs">
+        <button class="navTab" data-toggle="register"><a href="/farmer-signup">Register</a></button>
+        <button class="navTab active" data-toggle="login">Login</button>
+      </div>
+      <div class="contentWrapper">
+        <div class="content active" id="login">
+          <form action="/farmer-login" method="POST" autocomplete="on">
+            <div class="formGroup">
+              <label for="login-aadhaar">Aadhaar Number</label>
+              <input
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]{0,12}"
+                id="login-aadhaar"
+                name="aadhaarnumber"
+                placeholder="Aadhaar Number"
+                title="Enter a valid Aaadhaar Number"
+                required
+              />
+              <small class="messageHelp" data-js="loginAadhaarIncorrect">
+                Enter a valid Aadhaar Number
+              </small>
+              <label for="login-password" data-content="show">Password</label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Password"
+                name="password"
+                required
+              />
+              <small class="messageHelp" data-js="loginPassIncorrect">Password
+                incorrect</small>
+              <div>
+                <div>
+                  <input type="checkbox" id="checkBox" />
+                  <label for="checkBox">Keep me Signed in</label>
+                </div>
+                <a href="#" id="passwordReset">Forgot password?</a>
+              </div>
+              <a id="alreadyHaveAcc" href="/farmer-signup">Already have an
+                account? Sign up.</a>
+              <button class="submit-btn" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>

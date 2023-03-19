@@ -1,0 +1,304 @@
+body
+{
+	padding-block-start: 12em;
+	margin-inline: 4em;
+}
+
+.navbar
+{
+	display: flex;
+	position: fixed;
+	align-items: center;
+	gap: 4rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+	background-color: var(--pale-white);
+	color: var(--bg-black);
+	/* margin: 2em; */
+	top: 2em;
+	left: 0;
+	right: 0;
+	margin-inline: 2em;
+	padding: 1em 2em;
+	border-radius: 16px;
+	z-index: 999;
+	filter: drop-shadow(0 0 8px hsla(0, 0%, 0%, 20%));
+}
+
+.navbar-basket
+{
+	margin-inline-start: auto;
+	isolation: isolate;
+	position: relative;
+	/* width: 52px; */
+	/* height: 52px; */
+	display: grid;
+	place-items: center;
+}
+
+.navbar__basket
+{
+	display: flex;
+	gap: 0.5em;
+}
+
+.navbar-login
+{
+	position: relative;
+}
+.navbar-login::before
+{
+	content: "";
+	display: block;
+	background-color: var(--light-green);
+	width: 80%;
+	height: 90%;
+	border-radius: 8px;
+	position: absolute;
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) scale(1.5);
+}
+
+.shop-grid
+{
+	display: grid;
+	grid-template-columns: 4fr 1fr;
+	gap: 2em;
+}
+
+.shop-heading
+{
+	font-size: 2rem;
+	color: var(--dark-green);
+}
+
+.shop-total
+{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, auto) 1fr;
+	row-gap: 0.5em;
+	background-color: var(--pale-white);
+	padding: 1em;
+	border-radius: 16px;
+	height: max(50vh, 20rem);
+}
+
+.label-name:nth-child(11)
+{
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.price
+{
+	text-align: right;
+}
+
+.price::before
+{
+	content: "₹";
+}
+
+.buy-now
+{
+	margin-inline: auto;
+	grid-column: 1 / span 2;
+	background-color: var(--accent-color);
+	color: white;
+	border: none;
+	border-radius: 100px;
+	width: 100%;
+	padding: 0.5em 2em;
+	font-weight: 600;
+	font-size: 1.25rem;
+}
+
+
+.card
+{
+	scale: 1;
+	transition: scale 500ms ease;
+}
+.card:hover
+{
+	scale: 0.95;
+}
+.main
+{
+	display: flex;
+	flex-direction: column;
+	gap: 1.25em;
+	background: var(--pale-white);
+	padding: 1.5em;
+	border-radius: 16px;
+	font-family: "Poppins", sans-serif;
+
+}
+
+.can
+{
+	display: flex;
+	gap: 0.35em;
+	align-items: center;
+}
+
+.order-status
+{
+	display: inline-block;
+	font-size: 1.05rem;
+}
+
+.cancel
+{
+	color: red;
+}
+
+.success
+{
+	color: green;
+}
+
+.can.cancel::before
+{
+	content: url("https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/32/FF0000/external-multiply-user-interface-tanah-basah-glyph-tanah-basah.png");
+}
+
+.can.success::before
+{
+	content: url("https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/32/005244/external-multiply-user-interface-tanah-basah-glyph-tanah-basah.png");
+}
+
+
+.inform::before
+{
+	content: url("https://img.icons8.com/material-sharp/18/a0dacd/user.png");
+	padding-inline-end: 0.25rem;
+}
+
+.idorder::before
+{
+	content: url("https://img.icons8.com/material-rounded/18/a0dacd/ringer-volume.png");
+	padding-inline-end: 0.25rem;
+
+}
+
+.cropHead
+{
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+
+.info,
+.down
+{
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.down>*:nth-child(2n+1)
+{
+	font-size: 0.95rem;
+}
+
+.down>*:nth-child(2n)
+{
+	font-weight: bold;
+}
+
+.down>*:nth-child(2n+1)::before
+{
+	content: url("https://img.icons8.com/ios-glyphs/18/faa094/purchase-order.png");
+	padding-inline-end: 0.25rem;
+}
+
+
+
+/* Search */
+.search-heading
+{
+	font-size: 2rem;
+	font-weight: 600;
+	color: var(--dark-green);
+}
+
+.search-grid
+{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	gap: 2rem 4rem;
+}
+
+:is(input, select)
+{
+	padding: 1em 1em;
+	font-size: 1rem;
+	background-color: var(--pale-white);
+	border: none;
+	border-radius: 16px;
+	font-weight: 400;
+	color: var(--placeholder-text);
+	width: 100%;
+}
+
+.search-cards-grid
+{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5em;
+}
+
+.search-box
+{
+	position: relative;
+}
+
+.search-box>input
+{
+	padding-inline-end: 3.5rem;
+}
+
+.search-box>img
+{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 5%;
+}
+
+.search-right-part
+{
+	display: flex;
+	flex-direction: column;
+	gap: 5rem;
+}
+
+.recommended-heading
+{
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: var(--dark-green);
+}
+
+.recommended-list
+{
+	display: grid;
+	grid-template-columns: repeat(2,1fr);
+	gap: 1rem;
+}
+
+.reccomended-card
+{
+	background-color: var(--pale-white);
+	border: none;
+	border-radius: 16px;
+	padding: 1em;
+	transition: background-color 500ms ease;
+}
+.reccomended-card:hover
+{
+	background-color: var(--light-green);
+}

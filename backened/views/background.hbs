@@ -1,0 +1,40 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FarmerG</title>
+    <link rel="icon" type="image/svg" href="assets/FarmFreshLogo.svg" />
+    <link rel="stylesheet" href="/css/global.css" />
+    <link rel="stylesheet" href="/css/landingpage.css" />
+  </head>
+
+  <body>
+    <div class="landing_page_container">
+      <img class="logo" src="/assets/FarmerG.svg" />
+      <div class="main is-loading">
+        <p class="landing_page_heading">
+          Straight from the farm,<br />
+          substracting the weeds.
+        </p>
+      </div>
+      <p class="landing_page_login_as">Login as</p>
+      <div class="wrap">
+        <form action="/farmer-login"><button
+            class="button"
+          >seller</button></form>
+        <form action="/rest-login"><button class="button">buyer</button></form>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () { setTimeout(function () {
+      $(".main").removeClass("is-loading"); console.log("hemlo"); }, 1000); });
+    </script>
+  </body>
+
+</html>

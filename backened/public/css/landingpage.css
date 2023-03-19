@@ -1,0 +1,143 @@
+body
+{
+	background: linear-gradient(to bottom,
+			rgba(26, 25, 25, 0.66) 100%,
+			transparent),
+		url(../assets/rice-plantation.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	/* font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+}
+
+.landing_page_container
+{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin-inline: 4em;
+	gap: 1em;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.logo
+{
+	width: 24rem;
+	margin-block-end: 1em;
+}
+
+.main::before,
+.main::after
+{
+	content: "";
+	display: block;
+	background: var(--pale-white);
+	height: 4px;
+	transform: scaleX(1);
+	transition: transform 500ms ease 500ms;
+}
+
+.main::before
+{
+	transform-origin: left;
+	opacity: 0.4;
+}
+
+.main::after
+{
+	transform-origin: right;
+	opacity: 0.4;
+}
+
+.main.is-loading::before,
+.main.is-loading::after
+{
+	transform: scaleX(0);
+}
+
+.main
+{
+	margin-block-end: 8em;
+	opacity: 0.75;
+}
+
+.landing_page_heading
+{
+	font-size: 2rem;
+	font-weight: 500;
+	opacity: 0.5;
+	opacity: 1;
+	padding-block: 0.25rem;
+	transform: scale(1);
+	transition: transform 0.5s ease, opacity 1s ease;
+}
+
+.is-loading .landing_page_heading
+{
+	transform: scale(0.9);
+	opacity: 0;
+}
+
+.landing_page_login_as
+{
+	font-size: 2rem;
+	font-weight: 600;
+	color: #aec218;
+}
+
+.wrap
+{
+	display: flex;
+	gap: 1em;
+}
+
+.button
+{
+	padding: 1em 2em;
+	/* font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka,
+		"メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; */
+	font-size: 1rem;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: var(--dark-green);
+	background-color: #f9f9f9;
+	border: none;
+	border-radius: 100px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+}
+
+.button:hover
+{
+	background-color: #aec218;
+	box-shadow: 0px 15px 20px #07f19366;
+	color: #fff;
+	transform: translateY(-7px);
+}
+
+.loginAs
+{
+	font-size: 30px;
+	letter-spacing: 1px;
+	display: inline-block;
+	padding: 1.5rem;
+	font-weight: 400;
+	position: relative;
+	right: 1px;
+	left: 100px;
+	bottom: 300px;
+	opacity: 1;
+}
+
+img
+{
+	vertical-align: top;
+}
+
+body
+{
+	padding: 25px;
+}
