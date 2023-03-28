@@ -21,10 +21,16 @@ In all, direct procurement from farmers would increase their income and strength
 
 ## Installation
 
-### Pull this repository 
+### Clone this repository 
 
 ```console
-git pull https://github.com/Sarans13/FarmerG.git
+git clone https://github.com/Sarans13/FarmerG.git
+```
+
+### Change directory to FarmerG
+
+```console
+cd FarmerG/backened
 ```
 
 ### Install node modules
@@ -36,15 +42,17 @@ npm install
 ### Change current working directory
 
 ```console
-cd backened/src
+cd src
 ```
 
 ### Start local server
 
 ```console
-nodemon app.js
+npm run dev
 ```
+
 ##### Terminal Output:
+
 ```console
 > backened@1.0.0 dev
 > nodemon src/app.js -e js hbs
@@ -63,7 +71,7 @@ connection successful
 Visit the above mentioned port in the Terminal Output using "https://localhost:5500" in your browser.
 
 ## Instructions to authenticate Aadhaar
-
+### Open a new terminal
 ### Change the directory
 
 ```console
