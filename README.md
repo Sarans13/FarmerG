@@ -71,7 +71,7 @@ connection successful
 Visit the above mentioned port in the Terminal Output using "https://localhost:5500" in your browser.
 
 ## Instructions to authenticate Aadhaar
-### Open a new terminal
+### Open a new terminal in the same "src" directory
 ### Change the directory
 
 ```console
